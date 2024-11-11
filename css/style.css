@@ -2,9 +2,17 @@
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
+    background-image:url(/img/TechSoluciones.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 15rem;
 }
 
-
+.imageSection{
+    display: flex;
+    max-width: 20rem;
+    margin: 0 auto;
+}
 
 
 
@@ -57,3 +65,41 @@
     margin-top: 5px;
     color: #555;
 }
+
+.cacLogo{
+    display:flex;
+    width: 75dvw;
+    margin: 0 auto;
+    top: 0;
+
+}
+
+/*seccion del footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr auto; 
+    box-sizing: border-box;
+    background-color: rgba(32, 36, 36, 0.546);
+   
+}
+
+.footer .col-md-6 {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.footer .cacLogo {
+    min-width: 80dvw;
+    height: 5rem;
+    width: auto;
+}
+.text-end {
+    color: rgb(255, 255, 255);
+}
+
+
+/*media queries*/
