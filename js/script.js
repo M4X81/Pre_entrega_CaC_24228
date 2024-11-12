@@ -22,3 +22,8 @@ const modal = document.getElementById('faqModal');
                 pregunta.style.display = pregunta.style.display === 'none' ? 'block' : 'none';
             });
         });
+
+        function showAlert(event) {
+            event.preventDefault(); 
+            alert("Función aún no habilitada...");
+        }

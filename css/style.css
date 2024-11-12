@@ -1,36 +1,170 @@
-.mainConteiner{
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-    background-image:url(/img/TechSoluciones.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 15rem;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 260px;
+    font-family: "Faculty Glyphic", sans-serif;
 }
 
-.imageSection{
+.mainContainer {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    max-width: 100vw;
+    min-width: 260px;
+    min-height: max-content;
+    background: url('/video/5467579-hd_1920_1080_30fps.mp4') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+.mainContainer-services {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    min-width: 260px;
+    min-height: max-content;
+    background: url('/video/7859361-uhd_4096_2160_25fps.mp4') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+.navbar {
+    background-color: #55555579;
+    position: relative;
+    z-index: 10;
     display: flex;
-    max-width: 20rem;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0.5rem 1rem;
+}
+.navbar-collapse {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.mainFrame {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0;
+    max-width: 100dvw;
+    z-index: 5;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+    padding: 5rem;
+    z-index: 1;
+    font-size: 1.3rem;
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    text-align: center;
+}
+
+.imageSection {
+    display: flex;
+    max-width: 10rem;
     margin: 0 auto;
 }
 
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.videoServices {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    min-height: max-content;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.logoNav {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.logoNav:hover {
+    transform: rotate(360deg);
+    transition: 0.5s ease-in-out;
+
+}
 
 
+.nav-link:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+    color: brown;
+}
+
+.servicesArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: whitesmoke;
+}
+
+.serviceClass h1,
+h3,
+p {
+    color: #fff;
+}
+
+.imageSection2 {
+    max-width: 60%;
+}
+
+.what-container,
+ul {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    margin-top: 5rem;
+    list-style-type: none;
+}
+
+.link-what ul {
+
+    width: 10rem;
+    align-items: end;
+}
 
 /* sección preguntas frecuentes*/
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
+    color: #333;
 }
 
 .modal-content {
+    margin-top: 20rem;
     background-color: #fff;
     padding: 20px;
     width: 80%;
@@ -38,10 +172,12 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+
 }
 
 .close-btn {
     position: absolute;
+    border-radius: 5px;
     top: 10px;
     right: 15px;
     font-size: 24px;
@@ -52,11 +188,13 @@
 
 .faq-item {
     margin: 15px 0;
+    color: #333;
 }
 
 .faq-item h3 {
     font-size: 18px;
     cursor: pointer;
+    color: #333;
 }
 
 .faq-item p {
@@ -66,11 +204,12 @@
     color: #555;
 }
 
-.cacLogo{
-    display:flex;
-    width: 75dvw;
+.cacLogo {
+    display: flex;
+    width: 50dvw;
     margin: 0 auto;
     top: 0;
+    height: 4rem;
 
 }
 
@@ -80,26 +219,124 @@
     bottom: 0;
     width: 100%;
     display: grid;
-    grid-template-columns:1fr auto; 
+    grid-template-columns: 1fr auto;
     box-sizing: border-box;
     background-color: rgba(32, 36, 36, 0.546);
-   
+
 }
 
 .footer .col-md-6 {
     display: flex;
     justify-content: flex-start;
-    
+
+
 }
 
-.footer .cacLogo {
-    min-width: 80dvw;
-    height: 5rem;
-    width: auto;
-}
+
 .text-end {
+    display: flex;
+    align-items: center;
     color: rgb(255, 255, 255);
 }
 
 
 /*media queries*/
+
+@media (max-width: 768px) {
+    .text-end {
+        font-size: 0.6rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(0.9);
+        transition: 0.5s ease-in-out;
+        color: rgb(255, 255, 255);
+        box-shadow: 0 3px 6px rgba(255, 255, 255, 0.699),
+            0 6px 20px rgba(212, 204, 204, 0.315);
+        max-width: min-content;
+    }
+
+    .mainContainer {
+        font-size: 0.8rem;
+        position: absolute;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background-color: rgba(32, 36, 36, 0.546);
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        backdrop-filter: blur(5px);
+        margin-top: 24rem;
+        width: 100%;
+        background-color: rgba(169, 59, 59, 0.522);
+        padding: 2rem;
+        box-shadow: 0 3px 6px rgba(255, 255, 255, 0.699),
+            0 6px 20px rgba(212, 204, 204, 0.315);
+        color: #fff;
+
+    }
+
+    .servicesArticle {
+        margin-top: 2rem;
+        color: whitesmoke;
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .link-what {
+        width: 10rem;
+        align-items: end;
+    }
+}
+
+
+@media (max-width: 1160px) {
+    .text-end {
+        font-size: 0.7rem;
+    }
+
+    .footer .cacLogo {
+        width: 60dvw;
+        height: 3rem;
+        width: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .mainSection {
+        padding: 1rem;
+        color: #ffffff;
+        width: 260px;
+        align-items: center;
+        text-align: center;
+        animation: alertPulse 10s ease-out infinite;
+    }
+
+    .footer {
+        margin-top: 0;
+
+    }
+
+}
+
+/*Efectos*/
+@keyframes alertPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
