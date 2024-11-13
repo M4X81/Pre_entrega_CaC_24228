@@ -12,7 +12,7 @@ html {
     min-width: 260px;
     background: url('/video/5467579-hd_1920_1080_30fps.mp4') no-repeat center center fixed;
     background-size: cover;
-    z-index: 10;
+    z-index: 1;
 
 }
 .video {
@@ -36,6 +36,7 @@ html {
     min-height: max-content;
     background-image: url(/img/microchip-8280371_1280.jpg);
     background-size: cover;
+    margin-bottom: 4rem;
 }
 
 .mainContainerStore {
@@ -99,6 +100,8 @@ html {
     transition: 0.5s ease-in-out;
     color: brown;
 }
+
+/*Servicios*/
 
 .servicesArticle {
     display: grid;
