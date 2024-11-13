@@ -1,4 +1,5 @@
 .mainContainerForm{
+    height: 100svh;
     margin: 0;
     background-image: url(/img/ai-generated-7962528_1280.jpg);
     background-repeat: no-repeat;
@@ -9,7 +10,8 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 300px;
+    width: 80svw;
+    height: 80svh;
     padding: 20px;
     background-color: #646a703c;
     border-radius: 8px;
@@ -59,4 +61,47 @@
         height: 100dvh;
     }
     
+}
+@media (max-width: 768px) {
+    .text-end {
+        font-size: 0.5rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(0.9);
+        transition: 0.5s ease-in-out;
+        color: rgb(255, 255, 255);
+        box-shadow: 0 3px 6px rgba(255, 255, 255, 0.699),
+            0 6px 20px rgba(212, 204, 204, 0.315);
+        max-width: min-content;
+    }
+
+    .mainContainerForm{
+        width: 100dvw;
+        font-size: 0.8rem;
+        position: absolute;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background-color: rgba(32, 36, 36, 0.546);
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        backdrop-filter: blur(5px);
+        margin-top: 24rem;
+        width: 100%;
+        background-color: rgba(169, 59, 59, 0.522);
+        padding: 2rem;
+        box-shadow: 0 3px 6px rgba(255, 255, 255, 0.699),
+            0 6px 20px rgba(212, 204, 204, 0.315);
+        color: #fff;
+
+    }
+
 }

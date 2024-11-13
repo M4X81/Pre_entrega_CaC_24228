@@ -228,6 +228,65 @@ margin-bottom: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/*Form*/
+.mainContainerForm{
+    height: 100svh;
+    margin: 0;
+    background-image: url(/img/ai-generated-7962528_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80svw;
+    height: 80svh;
+    padding: 4rem;
+    background-color: #646a703c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-form label {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
 /*seccion del footer*/
 .footer {
     position: fixed;
@@ -259,7 +318,7 @@ margin-bottom: 5rem;
 
 @media (max-width: 768px) {
     .text-end {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .nav-link:hover {
@@ -271,7 +330,7 @@ margin-bottom: 5rem;
         max-width: min-content;
     }
 
-    .mainContainer {
+    .mainContainer{
         font-size: 0.8rem;
         position: absolute;
     }
@@ -333,7 +392,7 @@ margin-bottom: 5rem;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     .mainSection {
         padding: 1rem;
         color: #ffffff;
@@ -345,7 +404,12 @@ margin-bottom: 5rem;
 
     .footer {
         margin-top: 0;
-
+    }
+    .footer .col-md-6 p.text-end {
+        font-size: 0.5rem; 
+    }
+    .cacLogo{
+        max-width: 50dvw;
     }
 
 }
