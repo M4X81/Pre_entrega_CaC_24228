@@ -1,12 +1,24 @@
+.mainContainerForm{
+    margin: 0;
+    background-image: url(/img/ai-generated-7962528_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     width: 300px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #646a703c;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .contact-form label {
+    color: #ffffff;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -39,4 +51,12 @@
 
 .contact-form button:hover {
     background-color: #45a049;
+}
+
+/* Queries */
+@media (max-width: 360px){
+    .mainContainerForm{
+        height: 100dvh;
+    }
+    
 }

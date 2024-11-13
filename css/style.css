@@ -43,10 +43,6 @@ html {
     justify-content: space-between; 
     padding: 0.5rem 1rem;
 }
-.navbar-collapse {
-    display: flex !important;
-    align-items: center !important;
-}
 
 .mainFrame {
     position: relative;
@@ -70,9 +66,8 @@ html {
     text-align: center;
 }
 
-.imageSection {
-    display: flex;
-    max-width: 10rem;
+.about .imageSection img{
+    max-height:fit-content;
     margin: 0 auto;
 }
 
@@ -134,8 +129,7 @@ p {
     max-width: 60%;
 }
 
-.what-container,
-ul {
+.what-container {
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
@@ -203,7 +197,7 @@ ul {
     margin-top: 5px;
     color: #555;
 }
-
+/*--------------------------------------------*/
 .cacLogo {
     display: flex;
     width: 50dvw;
@@ -212,7 +206,22 @@ ul {
     height: 4rem;
 
 }
-
+/*about*/
+.mainAbout{
+    background-image: url(/img/technology-7111804_1280.jpg);
+}
+.mainAbout p, h2{
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+    background-color: rgba(187, 130, 212, 0.155);
+}
+.aboutArticles{
+margin-bottom: 5rem;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /*seccion del footer*/
 .footer {
     position: fixed;
@@ -293,6 +302,15 @@ ul {
     .link-what {
         width: 10rem;
         align-items: end;
+    }
+    .aboutArticles .about{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .imageSection{
+        display: none;
     }
 }
 
