@@ -461,6 +461,9 @@ h2 {
     .imageSection {
         display: none;
     }
+    .cacLogo {
+        max-width: 50dvw;
+    }
 
 }
 
