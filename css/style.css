@@ -45,6 +45,16 @@ html {
     background-repeat: no-repeat;
 }
 
+.mainNews p{
+color: #333;
+backdrop-filter: blur(5px);
+}
+.mainNews {
+background-image: url(/TechSoluciones.png);
+background-repeat: repeat;
+background-size:contain;
+
+}
 .navbar {
     background-color: #55555579;
     position: relative;
