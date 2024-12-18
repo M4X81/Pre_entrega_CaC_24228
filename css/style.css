@@ -15,6 +15,7 @@ html {
     z-index: 1;
 
 }
+
 .video {
     position: absolute;
     top: 0;
@@ -39,22 +40,36 @@ html {
     margin-bottom: 4rem;
 }
 
+.carousel img {
+    width: 8rem !important;
+    display: flex;
+    margin: 0 auto;
+
+}
+.carousel-control-prev, 
+.carousel-control-next, 
+.carousel-indicators{
+    display: none;
+}
+
 .mainContainerStore {
     background-image: url(/img/ai-generated-8113881_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.mainNews p{
-color: #333;
-backdrop-filter: blur(5px);
+.mainNews p {
+    color: #333;
+    backdrop-filter: blur(5px);
 }
+
 .mainNews {
-background-image: url(/TechSoluciones.png);
-background-repeat: repeat;
-background-size:contain;
+    background-image: url(/TechSoluciones.png);
+    background-repeat: repeat;
+    background-size: contain;
 
 }
+
 .navbar {
     background-color: #55555579;
     position: relative;
@@ -79,9 +94,10 @@ background-size:contain;
     align-items: center;
     position: relative;
     margin-top: 2rem;
-    padding: 5rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
     z-index: 1;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     backdrop-filter: blur(5px);
     color: #ffffff;
     text-align: center;
@@ -289,6 +305,12 @@ h2 {
 .contact-form button:hover {
     background-color: #45a049;
 }
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
 
 /*seccion del footer*/
 .footer {
@@ -322,7 +344,7 @@ h2 {
 /*Store*/
 .product-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1rem;
     max-width: 1920px;
     margin-bottom: 5rem;
@@ -413,7 +435,7 @@ h2 {
     }
 
     .mainContainer {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         position: absolute;
     }
 
@@ -461,6 +483,7 @@ h2 {
     .imageSection {
         display: none;
     }
+
     .cacLogo {
         max-width: 50dvw;
     }
@@ -483,14 +506,18 @@ h2 {
 
 @media (max-width: 360px) {
     .mainSection {
+        margin-top: 1rem;
+        padding: 2rem;
+      font-size: 0.6rem;
         padding: 1rem;
         color: #ffffff;
         width: 260px;
         align-items: center;
         text-align: center;
         animation: alertPulse 10s ease-out infinite;
-    }
 
+    }
+ 
     .footer {
         margin-top: 0;
     }
