@@ -46,9 +46,10 @@ html {
     margin: 0 auto;
 
 }
-.carousel-control-prev, 
-.carousel-control-next, 
-.carousel-indicators{
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
     display: none;
 }
 
@@ -305,6 +306,7 @@ h2 {
 .contact-form button:hover {
     background-color: #45a049;
 }
+
 .error {
     color: red;
     font-size: 0.9em;
@@ -351,7 +353,21 @@ h2 {
 
 }
 
-.product-card {
+.product-list .product-card .product-description-large {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+.product-card,
+.product-cart {
 
     background-color: #b1afb7;
     border: 1px solid #ddd;
@@ -364,6 +380,14 @@ h2 {
     text-align: center;
     padding: 1rem;
     transition: transform 0.2s ease;
+}
+
+.product-cart {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
 }
 
 
@@ -508,7 +532,7 @@ h2 {
     .mainSection {
         margin-top: 1rem;
         padding: 2rem;
-      font-size: 0.6rem;
+        font-size: 0.6rem;
         padding: 1rem;
         color: #ffffff;
         width: 260px;
@@ -517,7 +541,7 @@ h2 {
         animation: alertPulse 10s ease-out infinite;
 
     }
- 
+
     .footer {
         margin-top: 0;
     }
@@ -539,6 +563,9 @@ h2 {
         height: 100dvh;
     }
 
+    .product-cart {
+        font-size: 0.5rem;
+    }
 }
 
 
