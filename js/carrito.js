@@ -5,7 +5,7 @@ const cartTotal = document.getElementById("cart-total");
 const clearCartButton = document.getElementById("clear-cart");
 const totalQuantityDisplay = document.getElementById("cart-total-quantity")
 
-// Actualizar el DOM con el contenido del carrito
+
 function renderCart() {
   cartItems.innerHTML = ""; 
   let total = 0;
@@ -30,7 +30,6 @@ function renderCart() {
   totalQuantityDisplay.textContent = `Cantidad total: ${totalQuantity}`;
 }
 
-// Agregar producto
 function addToCart(id, name, price) {
 
   const existingProduct = cart.find((item) => item.id === id);
@@ -44,21 +43,20 @@ function addToCart(id, name, price) {
   saveCart(); 
   renderCart(); 
 }
-//Eliminar producto
+
 function removeFromCart(id) {
   cart = cart.filter((item) => item.id !== id); 
   saveCart(); 
   renderCart(); 
 }
 
-// Vaciar carrito
+
 clearCartButton.addEventListener("click", () => {
   cart = [];
   saveCart(); 
   renderCart(); 
 });
 
-// Guardar en localStorage
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
