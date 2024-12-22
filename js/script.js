@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Agregar al carrito
-    const addToCartButtons = document.querySelectorAll('.add-to-cart');
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            alert('Función no disponible aún...');
-        });
-    });
+    // // Agregar al carrito
+    // const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    // addToCartButtons.forEach(button => {
+    //     button.addEventListener('click', function() {
+    //         alert('Función no disponible aún...');
+    //     });
+    // });
 });

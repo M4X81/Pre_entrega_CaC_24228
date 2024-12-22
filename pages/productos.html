@@ -6,22 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Producto</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/carrito.css">
 </head>
 
 <body>
     <main class="product-cart">
-        <h1 class="product-title"></h1>
-        <div class="product-name"></div>
-        <div class="product-image"><img src="" alt=""></div>
-        <!-- <div class="product-description"></div> -->
-        <div class="product-description-large"></div>
-        <div class="product-price"></div>
-        <button class="add-to-cart">Agregar al carrito</button>
+        <!-- <h1 class="product-title"></h1> -->
+        <section>
 
+            <div class="product-name"></div>
+            <div class="product-image"><img src="" alt=""></div>
+            <div class="product-price"></div>
+            <button class="add-to-cart">Agregar al carrito</button>
+            <button id="back-to-cart">Seguir comprando</button>
+        </section>
+        <section>
+            <!-- <div class="product-description"></div> -->
+            <div class="product-description-large"></div>
+            <div data-id="" data-name="" data-price=""></div>
+        </section>
+
+
+     
     </main>
+   <div class="cart">
+           
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0</span></p>
+                <p id="cart-total-quantity">Cantidad total: 0</p>
+                <button id="clear-cart">Vaciar Carrito</button>
+
+            </div>
+        </div>
 
     <script src="/js/cards.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/carrito.js"></script>
 
 </body>
 
