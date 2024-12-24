@@ -54,6 +54,7 @@ html {
 }
 
 .mainContainerStore {
+    min-width: 100dvw;
     background-image: url(/img/ai-generated-8113881_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -348,7 +349,9 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1rem;
-    max-width: 1920px;
+    width: 90%;
+    max-width: 90%;
+    justify-self: center;
     margin-bottom: 5rem;
 
 }
@@ -416,7 +419,7 @@ h2 {
 }
 
 .add-to-cart,
-#back-to-cart {
+#back-to-cart,.cart button, #clear-cart{
     padding: 0.5rem 1rem;
     background-color: #2a9d8f;
     color: #fff;
@@ -432,8 +435,11 @@ h2 {
     max-height: initial;
 }
 
-.add-to-cart:hover {
+.add-to-cart:hover,
+#back-to-cart:hover,.cart button:hover , #clear-cart:hover {
     background-color: #21867a;
+    transform: scale(0.9);
+    transition: ease-in-out 0.5s;
 }
 
 /*media queries*/
@@ -580,6 +586,14 @@ h2 {
         height: 70dvh;
      font-size: 0.5rem;
     }
+    /* .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+        max-width: 400px;
+        margin-bottom: 5rem;
+    
+    } */
 }
 
 

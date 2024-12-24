@@ -7,8 +7,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
-  width: 100%;
-  height: 100dvh;
+  width: 90%;
+  min-height: 100dvh;
   font-size: 0.8rem;
   background-color: #b1afb7;
   border: 1px solid #ddd;
@@ -23,10 +23,43 @@ body {
   object-fit: cover;
 }
 
+.product-cart button {
+  width: 10rem;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+.cart-container {
+  background-color: #ddd;
+}
+
 .cart {
+  max-width: 80%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin: 0 auto;
+}
+
+.cart li {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  min-width: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.cart p {
+  color: black;
+}
+
+.cart button {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  justify-self: end;
 }
 
 @media (max-width: 768px) {
@@ -34,7 +67,7 @@ body {
   .product-cart {
     grid-template-rows: max-content;
     width: 80%;
-    height: 100dvh;
+    min-height: 100dvh;
     font-size: 0.5rem;
   }
 
@@ -45,5 +78,74 @@ body {
     margin-bottom: 1rem;
   }
 
+}
+
+@media (max-width: 640px) {
+
+  .product-cart {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 100dvh;
+    font-size: 0.7rem;
+  }
+
+  .product-cart img {
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .cart {
+    max-width: 70%;
+  }
+
+  .cart-container {
+    width: 100%;
+    justify-self: center;
+    margin: 0;
+  }
+
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 420px) {
+
+  #clear-cart {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .cart-container {
+    font-size: 0.6rem;
+    width: 100%;
+    justify-self: center;
+    margin: 0;
+    z-index: 10;
+  }
+
+  .cart {
+    justify-content: center;
+  }
+
+  .cart button {
+    background-color: #ddd;
+  }
+
+  .product-description-large {
+    max-height: 70vh;
+    overflow: hidden;
+    position: relative;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
 
 }

@@ -16,7 +16,13 @@ function renderCart() {
     li.textContent = `${item.name} x${item.quantity} - $${item.price * item.quantity}`;
     
     const removeButton = document.createElement("button");
-    removeButton.textContent = "Eliminar";
+    removeButton.textContent = " ";
+    const icon = document.createElement("img");
+    icon.src = "/img/uninstall_9498859.png"; 
+    icon.alt = "Eliminar";
+    icon.style.width = "0.8rem"; 
+    icon.style.height = "0.8rem";
+    removeButton.appendChild(icon);
     removeButton.onclick = () => removeFromCart(item.id);
     li.appendChild(removeButton);
 
@@ -27,7 +33,7 @@ function renderCart() {
   });
 
   cartTotal.textContent = total; 
-  totalQuantityDisplay.textContent = `Cantidad total: ${totalQuantity}`;
+  totalQuantityDisplay.textContent = `Productos en el carrito: ${totalQuantity}`;
 }
 
 function addToCart(id, name, price) {
